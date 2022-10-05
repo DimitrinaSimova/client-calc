@@ -1,0 +1,44 @@
+// Paths
+$path-asset-root: "../";
+$path-asset-images: "../images/";
+
+//Colors
+$white: #ffffff;
+$black: #000000;
+$gray-shade01: #F6F7F8;
+$gray-shade02: #E6E7E7; //Background
+$gray-shade03: #B2B2B2; //Inputs' placeholders
+$gray-shade04: #323332; //Titles
+$yellow: #FCD907;
+$blue: #4BA0D8;
+
+// Breakpoints
+$breakpoints: (
+    xs: (dir: min, size: 320px),
+    s: (dir: min, size: 480px),
+    sm: (dir: min, size: 576px),
+    md: (dir: min, size: 768px),
+    lg: (dir: min, size: 992px),
+    xl: (dir: min, size: 1200px),
+);
+
+// Borders
+$border1: 1px solid;
+$border2: 2px solid;
+
+// Border-radius
+$br-small: 2px;
+$br-medium: 4px;
+$br-large: 8px;
+
+// Font families
+// $font-family-regular: Montserrat-Regular, sans-serif;
+
+// Transition timings
+$transition-regular: 0.2s;
+$transition-medium: 0.4s;
+$transition-long: 0.8s;
+
+//Shadows
+$box-shadow: 0 0 6px $gray-shade03;
+$box-shadow1: 0px 4px 6px 2px rgba(0, 0, 0, 0.25);

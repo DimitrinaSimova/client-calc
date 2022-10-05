@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="page-container">
+
+        <form class="form white-bg">
+            <h1 class="bold text-center">Clients Calculator</h1>
+
+            <div class="fields__wrapper">
+                <input type="number" id="newClients" class="field__text" placeholder="New Clients">
+
+                <input type="number" id="oldClients" class="field__text" placeholder="Old Clients">
+            </div>
+            <div class="fields__wrapper">
+                <div class="chart__item">
+                    <svg viewBox="0 0 36 36" class="chart__draw-circle blue">
+                        <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <path class="circle" id="numNewClients" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <text x="18" y="20.35" id="percentageLabel" class="percentage"></text>
+                    </svg>
+                </div>
+                <div class="btn-submit__wrapper">
+                    <button class="btn-primary btn-submit bold" type="button" onclick="getClientsData()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="modalWarning" class="modal__overlay">
+        <div class="modal__body">
+            <div class="d-flex justify-content-between">
+                <div class="modal__title">Warning</div>
+                <button class="btn-close" onclick="closeModal()"></button>
+            </div>
+
+            <p class="modal__msg">
+                Incorrect data!
+            </p>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

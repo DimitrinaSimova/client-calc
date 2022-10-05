@@ -1,0 +1,15 @@
+.btn-primary {
+    padding: 10px;
+    color: $gray-shade04;
+    background-color: $yellow;
+    border: $border1 transparent;
+    border-radius: $br-medium;
+    @include transition(all, $transition-medium);
+
+    &:hover,
+    &:focus  {
+        color: $gray-shade04;
+        border-color: $gray-shade04;
+        background-color: transparent;
+    }
+}

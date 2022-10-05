@@ -1,0 +1,78 @@
+input[type=button], 
+input[type=submit], 
+input[type=reset] {
+    cursor: pointer;
+}
+
+.form {
+    width: 100%;
+    position: relative;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: $br-large;
+    box-shadow: $box-shadow1;
+}
+
+.fields__wrapper {
+    display: flex;
+    gap: 20px;
+    // justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+
+    @include bp(sm) {
+        flex-wrap: nowrap;
+        gap: 40px;
+    }
+}
+
+.field__text {
+    flex-basis: 100%;
+    
+    padding: 20px 30px;
+    border: $border1 $gray-shade02;
+    border-radius: $br-small;
+    box-shadow: $box-shadow;
+
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-moz-placeholder {
+        color: $gray-shade02;
+        font-size: 0.875rem;
+        font-style: italic;
+    }
+
+    // &:not(:focus) {
+    //     font-style:italic;
+    // }
+
+    ::-webkit-input-placeholder {
+        font-style: italic;
+     }
+     :-moz-placeholder {
+        font-style: italic;  
+     }
+     ::-moz-placeholder {
+        font-style: italic;  
+     }
+     :-ms-input-placeholder {  
+        font-style: italic; 
+     }
+
+    @include bp(sm) {
+        flex-basis: 50%;
+    }
+}
+
+.btn-submit__wrapper {
+    flex-basis: 40%;
+}
+
+.btn-submit {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    cursor: pointer;
+}

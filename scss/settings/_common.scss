@@ -1,0 +1,24 @@
+////////////////////////
+// COMMON STYLES
+a {
+    color: $gray-shade03;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+///////////////////
+// Backgrounds
+
+.white-bg {
+    background-color: $white;
+}
+
+.gray-bg {
+    background-color: $gray-shade02;
+}
